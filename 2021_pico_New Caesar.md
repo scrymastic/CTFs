@@ -11,7 +11,7 @@ kjlijdliljhdjdhfkfkhhjkkhhkihlhnhghekfhmhjhkhfhekfkkkjkghghjhlhghmhhhfkikfkfhm
 ## Solution:
 
 We have python script: `new_caesar.py`
-'''python
+```python
 import string
 
 LOWERCASE_OFFSET = ord("a")
@@ -40,6 +40,7 @@ enc = ""
 for i, c in enumerate(b16):
         enc += shift(c, key[i % len(key)])
 print(enc)
+
 ```
 Based on this given script, we have to write some code to decrypt secret code to get flag.
 Function to decode `b16_encode`:
