@@ -73,8 +73,8 @@ Look at those lines:
 assert all([k in ALPHABET for k in key])
 assert len(key) == 1
 ```
-They told us that `key` is one of some characters in `ALPHABET`.
-We will take care of all possible cases of the key, then look at all found flags.
+They told us that the `key` is one of some characters in `ALPHABET`.
+We will take care of all possible cases of the `key`, then look at all found flags.
 To do so, we use this:
 ```python
 import string
