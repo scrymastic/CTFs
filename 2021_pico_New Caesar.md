@@ -43,6 +43,7 @@ print(enc)
 
 ```
 Based on this given script, we have to write some code to decrypt secret code to get flag.
+
 Function to decode `b16_encode`:
 ```python
 def b16_decode(plain):
