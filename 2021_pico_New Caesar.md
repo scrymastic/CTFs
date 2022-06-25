@@ -82,7 +82,7 @@ import string
 LOWERCASE_OFFSET = ord("a")
 ALPHABET = string.ascii_lowercase[:16]
 
-enc = "kjlijdliljhdjdhfkfkhhjkkhhkihlhnhghekfhmhjhkhfhekfkkkjkghghjhlhghmhhhfkikfkfhm"
+encrypted_flag = "kjlijdliljhdjdhfkfkhhjkkhhkihlhnhghekfhmhjhkhfhekfkkkjkghghjhlhghmhhhfkikfkfhm"
 
 def b16_decode(plain):
     dec = ""
@@ -105,7 +105,7 @@ def unshift(c, k):
 
 for key in ALPHABET:
     dec = ""
-    for i, c in enumerate(enc):
+    for i, c in enumerate(encrypted_flag):
         dec += unshift(c, key)
     print(b16_decode(dec))
 ```
