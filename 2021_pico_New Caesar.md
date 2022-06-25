@@ -67,7 +67,7 @@ def unshift(c, k):
     t2 = ord(k) - LOWERCASE_OFFSET
     return ALPHABET[(t1 - t2) % 16]
 ```
-Now we need` key` to decrypt secret code.
+Now we need `key` to decrypt secret code.
 Look at those lines:
 ```python
 assert all([k in ALPHABET for k in key])
